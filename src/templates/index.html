@@ -6,9 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Flesk</title>
 </head>
+
+<style>
+    body{
+     background: linear-gradient(45deg,rgb(232, 236, 252),#ffff,rgb(232, 236, 252),#ffff);
+    }
+
+    .page_header{
+    font-family: "Lucia Bright",Georgia,serif;    
+    color:rgb(0, 89, 255);
+    font-size: 55px;
+    text-align: center;
+    text-shadow: -2px 3px 5px #999;
+    }
+
+    .caja{
+     border: rgb(0, 89, 255) 4px solid;
+     border-radius: 4px;
+     width: 400px;
+     padding: 3px;
+     text-align: center;
+     box-shadow: -2px 3px 5px #999;
+    }
+
+    input {
+        border-radius: 3px;
+        width: 100px;
+        height: 20px;
+        float:right;  
+    }
+
+    select{
+        border-radius: 3px;
+        width: 110px;
+        height: 20px;
+        float:right;  
+    }
+
+    .label{
+     font-family: "Lucia Bright",Georgia,serif;
+     font-size: 11px;
+
+    }
+</style>
+
+
 <body>
+   <center>
+<p class="page_header">Calculadora en flask</p>
+
+
+<div class = "caja">
+    <label>Primer Número </label>
+    <input type="number" name="numero1">
+    <br>
+    <br>
+
+    <label>Segundo Número</label>
+    <input type="number" name="numero2">
+    <br>
+    <br>
+    <br>
+    <label>Operación a realizar </label>
+    <select name="operacion">
+        <option value="+">Suma ( + )</option>
+        <option value="-">Resta ( - )</option>
+        <option value="*">Multiplicación( * )</option>
+        <option value="/">División ( / )</option>
+    </select>
+
     
-<p style="text-align: center;">calculadora cv</p>
+
+
+</div>
+
+</center> 
 
 </body>
 </html>
